@@ -32,10 +32,8 @@ export class InfoPaginaService {
      // Leer el archivo Json
      this.http.get('https://pro-portafolio.firebaseio.com/equipo.json')
      .subscribe( (resp: any[]) => {
- 
-       
        this.equipo = resp;
-       console.log(resp);
+      //  console.log(resp);
      });
    }
 
